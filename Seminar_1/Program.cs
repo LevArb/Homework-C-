@@ -83,15 +83,23 @@ else
 5 -> 2, 4
 8 -> 2, 4, 6, 8
 
-Console.WriteLine("Введите число, и я выведу все числа от 1 до этого числа");
+Console.WriteLine("Введите число, и я выведу все четные числа от 1 до этого числа");
 Console.Write("Введите число: ");
 string input1 = Console.ReadLine();
 int number1 = int.Parse(input1);
 int count = 2;
-Console.Write("1");
+if (number1 == 1)
+{
+    Console.WriteLine("От 1 до 0 нет чётных чисел.");
+}
+if (number1 <= 0)
+{
+    Console.WriteLine("Я считаю только положительные целочисленные");
+}
+
 while (count <= number1)
 {
-    Console.Write(" " + count);
+    Console.Write(count + " ");
     count += 2;
 }
 */
