@@ -9,9 +9,9 @@ try{
 Console.Write("Введите цифру, обозначающую день недели, и я скажу, является ли этот день выходным: ");
 string input = Console.ReadLine();
 int number = int.Parse(input);
-if (number < 0)
+if (number < 1)
 {
-    Console.WriteLine("Ваше число не положительное");
+    Console.WriteLine("Минимальная цифра для ввода: 1");
 }
 else if (number > 7)
 {
